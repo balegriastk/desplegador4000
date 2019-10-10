@@ -1,0 +1,116 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "SVN:"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "URL",
+            "id": "urlId"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Artefacto",
+            "separator": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Input.ChoiceSet",
+                            "placeholder": "Placeholder text",
+                            "choices": [
+                                {
+                                    "title": "Deploy",
+                                    "value": "deploy"
+                                },
+                                {
+                                    "title": "Lib",
+                                    "value": "lib"
+                                }
+                            ],
+                            "style": "expanded",
+                            "value": "deploy",
+                            "id": "lugarId"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "placeholder": ".war .jar .ear .etc",
+                            "id": "extensionId"
+                        }
+                    ]
+                }
+            ],
+            "id": "columnArtefacto"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Instancia",
+            "separator": true
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "placeholder": "Placeholder text",
+            "choices": [
+                {
+                    "title": "sicret-test-01-app-8170",
+                    "value": "sicret-test-01-app-8170"
+                },
+                {
+                    "title": "sicret-test-01-ws-8180",
+                    "value": "sicret-test-01-ws-8180"
+                },
+                {
+                    "title": "sicret-test-01-proc-8190",
+                    "value": "sicret-test-01-proc-8190"
+                },
+                {
+                    "title": " sicret-test-02-app-8270",
+                    "value": " sicret-test-02-app-8270"
+                },
+                {
+                    "title": "sicret-test-02-ws-8280",
+                    "value": "sicret-test-02-ws-8280"
+                },
+                {
+                    "title": "sicret-test-03-app-8370",
+                    "value": "sicret-test-03-app-8370"
+                },
+                {
+                    "title": "sicret-test-03-ws-8380",
+                    "value": "sicret-test-03-ws-8380"
+                },
+                {
+                    "title": "sicret-test-04-app-8470",
+                    "value": "sicret-test-04-app-8470"
+                },
+                {
+                    "title": "sicret-test-04-ws-8480",
+                    "value": "sicret-test-04-ws-8480"
+                }
+            ],
+            "id": "instanciaId",
+            "value": "sicret-test-01-app-8170"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "DEPLOYY!!"
+        }
+    ]
+}
